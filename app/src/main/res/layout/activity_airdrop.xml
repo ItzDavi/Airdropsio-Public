@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bggenerator_com"
+    tools:context=".AirdropActivity">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:hapticFeedbackEnabled="true"
+        android:layout_marginTop="6dp"
+        android:contentDescription="@string/back_arrow_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_34" />
+
+    <TextView
+        android:id="@+id/AD_title_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/details_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingBottom="20dp"
+        android:clickable="true"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/AD_title_details">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/normal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/AD_description_details"
+            tools:layout_editor_absoluteX="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/test_normal_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/progress_bar_cardview"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:visibility="gone"
+                    android:layout_marginTop="30dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardBackgroundColor="@color/ad_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout4"
+                    app:layout_constraintBottom_toTopOf="@+id/airdrop_banner_imageview">
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar_airdrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:backgroundTint="@color/white"
+                        android:drawingCacheQuality="high"
+                        android:indeterminateBehavior="repeat"
+                        android:indeterminateDrawable="@drawable/loading_logo"
+                        android:indeterminateDuration="700"
+                        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+                        android:visibility="gone" />
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/tags_string_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/category_tag_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/category_tag_textview"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/blockchain_tag_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/blockchain_tag_textview"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/other_tag_textview"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:text="@string/other_tag_textview"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/airdrop_banner_imageview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:maxWidth="720dp"
+                    android:maxHeight="960dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="48dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="invisible"
+                    android:contentDescription="@string/airdrop_banner_imageview"
+                    android:scaleType="centerInside"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+                <TextView
+                    android:id="@+id/AD_description_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center"
+                    android:justificationMode="inter_word"
+                    android:paddingHorizontal="20dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/airdrop_banner_imageview" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:background="@drawable/rounded_outline_textview"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tags_string_linear_layout">
+
+                    <ImageView
+                        android:id="@+id/AD_category_badge"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/nft_logo"
+                        android:src="@drawable/icons8_nft_64"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/AD_blockchain_badge"
+                        android:layout_width="0dp"
+                        android:layout_height="58dp"
+                        android:layout_marginVertical="6dp"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/ethereum_logo"
+                        android:src="@drawable/eth_logo"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/AD_other_badge"
+                        android:layout_width="0dp"
+                        android:layout_height="38dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:contentDescription="@string/verified_ad_badge"
+                        android:src="@drawable/ic_baseline_verified_24"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/how_to_enter_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@drawable/rounded_outline_textview"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/AD_description_details">
+
+                    <TextView
+                        android:id="@+id/how_to_enter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="@string/how_to_enter_textview"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/how_to_enter_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:gravity="center"
+                        android:paddingVertical="15dp"
+                        android:text="@string/how_to_enter_details"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="italic"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/AD_rule_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="@string/first_instruction_textview"
+                        android:textColor="@color/white"
+                        android:textStyle=""
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/AD_rule_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="@string/second_instruction_textview"
+                        android:textColor="@color/white"
+                        android:textStyle=""
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/AD_rule_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/third_instruction_textview"
+                        android:textColor="@color/white"
+                        android:textStyle=""
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/requirements_details_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rounded_outline_textview"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/how_to_enter_details_layout">
+
+                    <TextView
+                        android:id="@+id/requirements"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="15dp"
+                        android:text="@string/requirements_textview"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/requirements_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:gravity="center"
+                        android:paddingVertical="15dp"
+                        android:text="@string/requirements_details_textview"
+                        android:textColor="@color/white"
+                        android:textStyle="italic"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/AD_requirements_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="@string/first_requirements_textview"
+                        android:textColor="@color/white"
+                        android:textStyle=""
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/AD_requirements_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingVertical="10dp"
+                        android:text="@string/second_requirements_textview"
+                        android:textColor="@color/white"
+                        android:textStyle=""
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/AD_requirements_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingBottom="20dp"
+                        android:text="@string/third_requirement_textview"
+                        android:textColor="@color/white"
+                        android:textStyle=""
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

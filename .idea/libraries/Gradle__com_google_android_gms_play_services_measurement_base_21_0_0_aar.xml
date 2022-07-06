@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-measurement-base:21.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5553b5a98026d0cf8bc11639b3419b3e/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94500adb14eb32ad3bad98bf3c28a924/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/497cc8a8f0714fa42cf03336eb538114/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/102870784e864ac503ae3d8cc6e70b42/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5921b97d470ab41010df24c2b6c1c22c/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b5f52cf57057f2a891ff090ae8465e37/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b01fce7caaa14f09d4ea5de7dd296cf9/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2f09a261d453b1b7485b46d151d2970c/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2847bbddfac894d765bb8331872c19ea/transformed/play-services-measurement-base-21.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2847bbddfac894d765bb8331872c19ea/transformed/play-services-measurement-base-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2847bbddfac894d765bb8331872c19ea/transformed/play-services-measurement-base-21.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.android.gms/play-services-measurement-base/21.0.0/e30555d01f4b419de1eed6ceed27b98aedecf946/play-services-measurement-base-21.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-installations:17.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cbdd554867b9028cba8b712e847cc4da/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a7745fc654221aad1b043678f37e964f/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/04dccf9fe4bc972a9b42a530a26ee3d3/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/bfd69e9e6942cda28e0f84cb8806c728/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/08ab85f18872bf85487e6cd04e15ef22/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2a74455788e1eedf3ad6d1a3f16eb9bd/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4b8423c8fce22a880da88ae38c27ca8d/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1e5bbed07333618817ec5880c421e058/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fb0eabee9f32c86af7a6ad20499538b0/transformed/firebase-installations-17.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/4fb3c849cda464df3f35dfea19a59f62/transformed/firebase-installations-17.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4fb3c849cda464df3f35dfea19a59f62/transformed/firebase-installations-17.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4fb3c849cda464df3f35dfea19a59f62/transformed/firebase-installations-17.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-installations/17.0.1/a5de27e8894c107c06e27ee0bfdf8c24216354a2/firebase-installations-17.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

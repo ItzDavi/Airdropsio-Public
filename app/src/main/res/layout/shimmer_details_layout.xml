@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_bggenerator_com">
+
+    <TextView
+            android:textStyle="bold"
+            android:id="@+id/AD_description_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@color/ad_gray"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_outline_textview"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AD_title_details">
+
+            <ImageView
+                android:id="@+id/AD_category_badge"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/nft_logo"
+                android:background="@color/ad_gray" />
+
+            <ImageView
+                android:id="@+id/AD_blockchain_badge"
+                android:layout_marginVertical="6dp"
+                android:layout_width="0dp"
+                android:layout_height="58dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/ethereum_logo"
+                android:background="@color/ad_gray" />
+
+            <ImageView
+                android:id="@+id/AD_other_badge"
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:contentDescription="@string/verified_ad_badge"
+                android:background="@color/ad_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/how_to_enter_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/rounded_outline_textview"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.482"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AD_description_details">
+
+            <TextView
+                android:id="@+id/how_to_enter"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:paddingTop="15dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/how_to_enter_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:textSize="16sp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/AD_rule_one"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:layout_gravity="center"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/AD_rule_two"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/AD_rule_three"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/requirements_details_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_outline_textview"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/how_to_enter_details_layout">
+
+            <TextView
+                android:id="@+id/requirements"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="15dp"
+                android:background="@color/ad_gray"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/requirements_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:gravity="center"
+                android:paddingVertical="15dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/AD_requirements_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="10dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/AD_requirements_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingVertical="10dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="" />
+
+            <TextView
+                android:id="@+id/AD_requirements_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/ad_gray"
+                android:textColor="@color/white"
+                android:textStyle="" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/AD_title_details"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@color/ad_gray"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-storage-ktx:20.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d0215fcb8d9a8635a00f008edb9aa003/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b0ef1dbfab9ff0baeff3563ef62500fb/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/db2bf68a489a6ec4e2771e099515ac3e/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1dee1c4def7c8c7ea2530e7fe3c0e15e/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5ba8f18c61175e7ada123666d4dcbd90/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/afc74f50de53b83e989eb5086a0f8e51/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f95be02d829ce302c53d0f6d144d7d92/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ebd08c805e094e4b1cae7000fa1352a4/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d947334a66030e8f028b2e1f0aa2d986/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5e1f3688ccbf13bc3279b0ba1b813a5b/transformed/firebase-storage-ktx-20.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5e1f3688ccbf13bc3279b0ba1b813a5b/transformed/firebase-storage-ktx-20.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/5e1f3688ccbf13bc3279b0ba1b813a5b/transformed/firebase-storage-ktx-20.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage-ktx/20.0.1/786547144e4d4d3459296cc8954a23b3a6f496f4/firebase-storage-ktx-20.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-storage-ktx/20.0.1/b2e0cacf9f83effec148cc7bf659a21ea8fae1c5/firebase-storage-ktx-20.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

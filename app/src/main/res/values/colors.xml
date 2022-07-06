@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ad_fake_white">#F2FFFFFF</color>
+    <color name="ad_blue">#181F3C</color>
+    <color name="ad_bluette">#119DA4</color>
+    <color name="ad_chinese_violet">#8B687F</color>
+    <color name="ad_lightest_bluette">#6D9DC5</color>
+    <color name="ad_lightest_blue">#AFD7E6</color>
+    <color name="ad_light_blue">#627CA7</color>
+    <color name="ad_gray">#7C849C</color>
+    <color name="ad_light_gray">#AAAFBF</color>
+    <color name="ad_red">#F44336</color>
+    <color name="ad_yellow">#FFEB3B</color>
+    <color name="ad_darker_yellow">#D8C51C</color>
+    <color name="ad_transparent">#00FFFFFF</color>
+</resources>

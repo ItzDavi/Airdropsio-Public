@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-inappmessaging:20.1.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6cced6f84e8a59cc206a33a52974e41d/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/5247fc449ab92ed7b24e1f10ac50f706/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/58e1ea768d89925a8e63b3a10501bd65/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f82c1213502ce59020451e22cd9ce24a/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/94046c49869b9bfcd6a6e3d18da6b953/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b804b8e0e48dab2c98f3f9a0dee06771/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d314509b775d7ea9905d9d5915dafee1/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/aa04218ab5ffb4a6d7c41dffe286abc5/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c5f77aa481e4dd6aa9ada72271895a4e/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c7bdb0607a945b1e5c4c308c8fd83ef/transformed/firebase-inappmessaging-20.1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2c7bdb0607a945b1e5c4c308c8fd83ef/transformed/firebase-inappmessaging-20.1.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/2c7bdb0607a945b1e5c4c308c8fd83ef/transformed/firebase-inappmessaging-20.1.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-inappmessaging/20.1.2/ef9f99f447a78490ee5641838b32f8827b98e311/firebase-inappmessaging-20.1.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

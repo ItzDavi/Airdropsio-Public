@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-analytics-ktx:21.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/39f62313db7145ba0f70ff4a739f0fa2/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b93c319cb3838e1a8081382adf4ee7a4/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cebdb5e05b9c9879003f5e2dcae0ee0e/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3039b6d513c846969bc60261d5ad073a/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4a774b253e931f754487556770a77ce0/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/a9aad077205bb8a5723c96f40f2166b3/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e6c0b46c1c53455b0bec2e53df61ce16/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/445cfe923317af7d636caa3c27fc0a23/transformed/firebase-analytics-ktx-21.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/6a7cc5f3783d45c0401571d038ed1009/transformed/firebase-analytics-ktx-21.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6a7cc5f3783d45c0401571d038ed1009/transformed/firebase-analytics-ktx-21.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6a7cc5f3783d45c0401571d038ed1009/transformed/firebase-analytics-ktx-21.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics-ktx/21.0.0/e30555d01f4b419de1eed6ceed27b98aedecf946/firebase-analytics-ktx-21.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

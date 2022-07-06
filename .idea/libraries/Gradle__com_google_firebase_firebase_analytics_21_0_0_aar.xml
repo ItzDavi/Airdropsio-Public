@@ -1,0 +1,21 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-analytics:21.0.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3d70bd93d23df41369ac8d0098821cf6/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b0542db3b518ee890862c84aab905bcd/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/b8d11d3935f3fdfb362cfcb02bda320e/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/654a2a68ab98e1b1612a24e7ff5fe054/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f127ab54916ffafb645e5e494385a9e1/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4e41f643836440cc2ba5f9f61d1593fc/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ca9432f1dd9ad7fd4fde96d9fb69de57/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c306fb789769d54cc8cf98464ce2be0c/transformed/firebase-analytics-21.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/1c54fb60e28f27c711ce0334ab8ee611/transformed/firebase-analytics-21.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1c54fb60e28f27c711ce0334ab8ee611/transformed/firebase-analytics-21.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1c54fb60e28f27c711ce0334ab8ee611/transformed/firebase-analytics-21.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.firebase/firebase-analytics/21.0.0/e30555d01f4b419de1eed6ceed27b98aedecf946/firebase-analytics-21.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

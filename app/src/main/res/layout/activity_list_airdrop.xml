@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListAirdropActivity"
+    android:background="@drawable/bg_bggenerator_com">
+
+    <ImageButton
+        android:id="@+id/back_button"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="58dp"
+        android:layout_marginTop="6dp"
+        android:hapticFeedbackEnabled="true"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/back_arrow_button"
+        android:src="@drawable/ic_baseline_arrow_back_34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/list_airdrop_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="80dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/list_your_airdrop_textview"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/list_airdrop_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="58dp"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/list_airdrop_textview">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/list_airdrop_scrollview_constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:id="@+id/list_airdrop_airdrop_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/list_airdrop_title"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/list_airdrop_scrollview_constraint" />
+
+            <EditText
+                android:id="@+id/airdrop_title_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="66dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_outline_edittext"
+                android:gravity="start"
+                android:hint="@string/list_title_hint"
+                android:inputType="text|textCapSentences"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list_airdrop_airdrop_title"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/start_date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/list_starting_date"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_title_edittext" />
+
+            <DatePicker
+                android:id="@+id/start_date_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:calendarViewShown="false"
+                android:theme="@style/MyDatePicker"
+                android:datePickerMode="spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/start_date_textview" />
+
+            <TextView
+                android:id="@+id/end_date_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/list_ending_date"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/start_date_datepicker" />
+
+            <DatePicker
+                android:id="@+id/end_date_datepicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/MyDatePicker"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/end_date_textview" />
+
+            <EditText
+                android:id="@+id/airdrop_description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="66dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_outline_edittext"
+                android:gravity="start|top"
+                android:hint="@string/list_description_hint"
+                android:inputType="textMultiLine|textCapSentences"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"
+                app:layout_constraintTop_toBottomOf="@id/end_date_datepicker"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/airdrop_rules_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/list_airdrop_rules"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_description_edittext" />
+
+            <EditText
+                android:id="@+id/airdrop_first_rule_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="66dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/rounded_outline_edittext"
+                android:hint="@string/list_first_rule_hint"
+                android:inputType="text|textCapSentences"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_rules_textview"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/airdrop_second_rule_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="66dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_outline_edittext"
+                android:hint="@string/list_second_rule_hint"
+                android:inputType="text|textCapSentences"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_first_rule_edittext"
+                android:importantForAutofill="no" />
+
+            <EditText
+                android:id="@+id/airdrop_third_rule_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="66dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/rounded_outline_edittext"
+                android:hint="@string/list_third_rule_hint"
+                android:inputType="text|textCapSentences"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="15dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textStyle="italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_second_rule_edittext"
+                android:importantForAutofill="no" />
+
+            <TextView
+                android:id="@+id/airdrop_blockchain_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/list_blockchain"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_third_rule_edittext" />
+
+            <RadioGroup
+                android:id="@+id/airdrop_blockchain_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_blockchain_textview">
+
+                <RadioButton
+                    android:id="@+id/airdrop_eth_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_outline_radiobutton"
+                    android:checked="true"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/list_ethereum_radiogroup"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/airdrop_sol_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_outline_radiobutton"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/list_solana_radiogroup"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/airdrop_category_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/list_category"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_blockchain_radiogroup" />
+
+            <RadioGroup
+                android:id="@+id/airdrop_category_radiogroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_category_textview">
+
+                <RadioButton
+                    android:id="@+id/airdrop_nft_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_outline_radiobutton"
+                    android:checked="true"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/list_nft_radiogroup"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/airdrop_ico_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_outline_radiobutton"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/list_ico_radiogroup"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/airdrop_dao_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_outline_radiobutton"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/list_dao_radiogroup"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/airdrop_igo_radiobutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/rounded_outline_radiobutton"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:text="@string/list_igo_radiogroup"
+                    android:buttonTint="@color/white"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/airdrop_banner_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="@string/airdrop_banner_textview"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_category_radiogroup" />
+
+            <ImageView
+                android:id="@+id/airdrop_banner_upload"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:adjustViewBounds="true"
+                android:hapticFeedbackEnabled="true"
+                android:scaleType="center"
+                android:src="@drawable/airdropsio_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_banner_textview"
+                android:contentDescription="@string/airdrop_banner_description" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/progress_bar_cardview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/ad_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/airdrop_banner_upload">
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:drawingCacheQuality="high"
+                    android:indeterminateBehavior="repeat"
+                    android:indeterminateDrawable="@drawable/loading_logo"
+                    android:indeterminateDuration="700"
+                    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+                    android:visibility="gone" />
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/list_airdrop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:layout_marginBottom="20dp"
+                android:hapticFeedbackEnabled="true"
+                android:background="@drawable/rounded_button"
+                android:paddingHorizontal="10dp"
+                android:text="@string/list_your_airdrop_button"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/progress_bar_cardview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
