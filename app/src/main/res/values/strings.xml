@@ -1,5 +1,4 @@
 <resources>
-    <string name="your_web_client_id">468414907059-gp7vl8ttap3pkkmgbn1lffp8n94fvp7i.apps.googleusercontent.com</string>
     <string name="app_name">AirDrops.io</string>
     <string name="welcome_text_view">Welcome to\n\nAirDrops.io</string>
     <string name="airdrops_io_logo">Airdrops.io Logo</string>
